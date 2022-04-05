@@ -22,7 +22,7 @@ def addTodoItem(request):
         new_todo = Todolist(text=request.POST['text'])
         new_todo.save()
     
-
+    # print(request.POST['terxt']) this function is deleted as 'if form' is set to valid as above
     return redirect('index')
 
 
